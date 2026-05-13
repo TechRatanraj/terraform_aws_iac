@@ -12,6 +12,6 @@ resource "aws_subnet" "default_subnet" {
 
 resource "aws_instance" "example" {
   ami           = "ami-0ecb62995f68bb549"
-  instance_type = "t2.micro"
+  instance_type = "t3.micro"
   subnet_id     = aws_subnet.default_subnet.id
 }
